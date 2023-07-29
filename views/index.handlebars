@@ -1,0 +1,7 @@
+<h1 class="text-center text-light">Mini Message App</h1>
+<ul class="list-group lh-lg">
+    {{#each messages}}
+    <li class="list-group-item bg-light">{{this.added}} <br><strong>{{this.user}}:</strong> {{this.text}} </li>
+    {{/each}}
+</ul>
+<a href="/new" class="btn btn-light mt-4">New Message</a>
